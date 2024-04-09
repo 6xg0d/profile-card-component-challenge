@@ -11,6 +11,7 @@
 	/*neutral*/
 	--dark-gray: hsl(0, 0%, 59%);
 	--white: hsl(0, 100%, 100%);
+	--hr-color: hsla(240, 2.07%, 71.57%, 0.3);
 }
 body {
 	min-height: 100vh;
@@ -84,7 +85,7 @@ body {
 /*HORIZONTAL RULE*/
 hr {
 	border: none;
-	background-color: var(--dark-gray);
+	background-color: var(--hr-color);
 	height: 1px;
 	width: 100%;
 }
