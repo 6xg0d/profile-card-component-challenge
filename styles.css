@@ -26,6 +26,7 @@ body {
 }
 /*CARD STYLES*/
 .card {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -43,7 +44,6 @@ body {
 }
 /*CARD HEADER*/
 .card-header {
-	position: relative;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -54,7 +54,7 @@ body {
 }
 .card > .pfp {
 	position: absolute;
-	top: 29%;
+	top: 20%;
 	border-radius: 50%;
 	border: 5px solid var(--white);
 }
