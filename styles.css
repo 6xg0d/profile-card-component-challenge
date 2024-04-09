@@ -1,0 +1,105 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	/*primary*/
+	--dark-cyan: hsl(185, 75%, 39%);
+	--very-dark-desaturated-blue: hsl(229, 23%, 23%);
+	--dark-grayish-blue: hsl(227, 10%, 46%);
+	/*neutral*/
+	--dark-gray: hsl(0, 0%, 59%);
+	--white: hsl(0, 100%, 100%);
+}
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Kumbh Sans", sans-serif;
+	padding: 20px;
+	background-color: var(--dark-cyan);
+	background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+	background-repeat: no-repeat, no-repeat;
+	background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+}
+/*CARD STYLES*/
+.card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-width: 320px;
+	max-width: 340px;
+	width: 80%;
+	border-radius: 20px;
+	background-color: var(--white);
+}
+.card-body > .city,
+.name-age-section > .age,
+.footer-section > p {
+	color: var(--dark-grayish-blue);
+}
+/*CARD HEADER*/
+.card-header {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.card-header > img {
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+.card > .pfp {
+	position: absolute;
+	top: 29%;
+	border-radius: 50%;
+	border: 5px solid var(--white);
+}
+/*CARD BODY*/
+.card-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 10px;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+}
+.card-body .name,
+.card-footer .stats {
+	font-size: 1.125em;
+	color: var(--very-dark-desaturated-blue);
+	font-weight: 700;
+}
+.card-body > .name-age-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 5px;
+	padding-top: 45px;
+}
+/*HORIZONTAL RULE*/
+hr {
+	border: none;
+	background-color: var(--dark-gray);
+	height: 1px;
+	width: 100%;
+}
+/*CARD FOOTER*/
+.card-footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 20px;
+}
+.card-footer > .footer-section {
+	text-align: center;
+	margin-right: 16px;
+}
+.footer-section > p {
+	letter-spacing: 1px;
+	font-size: 0.75em;
+}
